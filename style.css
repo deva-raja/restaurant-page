@@ -1,0 +1,308 @@
+/*===================
+    Table Of Content
+    1.general
+    2.home
+    3.menu
+    4.contact
+    5.about
+===================*/
+
+/*=============
+    general
+==============*/
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  color: white;
+  position: absolute;
+  left: 30vw;
+  top: 25px;
+  width: 550px;
+  justify-content: space-around;
+}
+a {
+  font-size: 29px;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*=============
+home
+=============*/
+#home-navbar {
+  left: 27vw;
+}
+#home-navbar a {
+  font-size: 27px;
+}
+
+#home-navbar a:hover {
+  color: #81df54;
+}
+#home-body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #181a1b;
+}
+
+#title {
+  font-size: 78px;
+  font-weight: 900;
+  position: fixed;
+  top: 150px;
+  left: 470px;
+  color: white;
+  animation: 3s ease-out 0s 1 bigToSmall;
+}
+#food-quote {
+  font-size: 48px;
+  font-weight: 900;
+  position: absolute;
+  top: 310px;
+  left: 720px;
+  text-transform: capitalize;
+  color: #81df54;
+  animation: 3s ease-out 0s 1 bigToSmall;
+}
+#button-container {
+  display: flex;
+  width: 750px;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 320px;
+  left: 450px;
+}
+#button-container button {
+  border-radius: 100px;
+  width: 280px;
+  height: 80px;
+  padding: 10px;
+  outline: none;
+  border: #181a1b 1px solid;
+  text-transform: capitalize;
+  font-size: 27px;
+  font-weight: 400;
+}
+#book-table {
+  background-color: #81df54;
+  color: black;
+}
+#take-out {
+  background-color: white;
+  color: #81df54;
+}
+#plate {
+  width: 700px;
+  height: 700px;
+  position: fixed;
+  right: -150px;
+  top: -75px;
+  animation: 3s ease-out 0s 1 bigToSmall;
+  z-index: 3;
+}
+#plate2 {
+  width: 520px;
+  height: 520px;
+  position: fixed;
+  left: -110px;
+  top: -60px;
+  animation: 3s ease-out 0s 1 bigToSmall;
+}
+#cake {
+  width: 350px;
+  height: 350px;
+  position: fixed;
+  left: -20px;
+  bottom: -30px;
+  animation: 3s ease-out 0s 1 bigToSmall;
+}
+
+#wave {
+  width: 1860px;
+  height: 860px;
+  position: fixed;
+  z-index: 1;
+  transform: rotate(300deg);
+  bottom: 10px;
+  right: -500px;
+}
+/*home-animations keyframes */
+@keyframes bigToSmall {
+  0% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*============
+    menu
+=============*/
+#menu-navbar a:hover {
+  color: #79ddb4;
+}
+#menu-body {
+  width: 100vw;
+  height: 100vh;
+  background: url(images/menu-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#card-container {
+  display: flex;
+  position: fixed;
+  top: 220px;
+  left: 100px;
+  width: 90vw;
+  justify-content: space-around;
+}
+.card {
+  position: relative;
+  width: 400px;
+  height: 560px;
+  border-radius: 20px;
+  z-index: 1;
+  font-size: 23px;
+  animation: 1.5s ease-out 0s 1 bigToSmallMenu;
+}
+#pink-card {
+  background-color: #ffe8df;
+}
+#green-card {
+  background-color: #79ddb4;
+}
+#yellow-card {
+  background-color: #ffea75;
+}
+#fancy {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  z-index: 2;
+  top: -30px;
+  left: -30px;
+}
+#fancy-heading {
+  position: absolute;
+  top: 115px;
+  left: 80px;
+}
+#fancy-flex {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-around;
+  top: 190px;
+  left: 40px;
+}
+
+/*menu-animations keyframes */
+@keyframes bigToSmallMenu {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*=============
+    contact
+==============*/
+#contact-navbar a:hover {
+  color: #001aff;
+}
+#contact-body {
+  width: 100vw;
+  height: 100vh;
+  background: url(images/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#story-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 29px;
+  height: 600px;
+  justify-content: space-around;
+  position: absolute;
+  right: 350px;
+  bottom: 250px;
+  color: white;
+}
+
+#contact-image {
+  width: 700px;
+  height: 500px;
+  position: absolute;
+  top: 180px;
+  left: 100px;
+  animation: 2s ease-out 0s 1 bigToSmallContact;
+}
+
+/* contact animations */
+@keyframes bigToSmallContact {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*=============
+    about
+==============*/
+#about-navbar a {
+  color: black;
+}
+#about-navbar a:hover {
+  color: white;
+}
+#about-body {
+  width: 100vw;
+  height: 100vh;
+  background: url(images/about-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#about-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  height: 70vh;
+  justify-content: space-around;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  color: #ffffff;
+  animation: 3s ease-out 0s 1 changeColor;
+}
+#pink {
+  color: #ff9970;
+}
+#green {
+  color: #79ddb4;
+}
+#yellow {
+  color: #fcde37;
+}
+
+/* about-animations */
+@keyframes changeColor {
+  0% {
+    color: #ff9970;
+  }
+  100% {
+    color: white;
+  }
+}
